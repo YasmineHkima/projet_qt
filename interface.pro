@@ -1,5 +1,11 @@
 QT       += core gui
 QT+= sql
+QT+= network
+QT += widgets
+QT += charts
+TARGET = simpleCalculator
+TEMPLATE = app
+QT += core gui network
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -20,12 +26,14 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
     connection.cpp \
     benevole.cpp \
+    excelexport.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
     connection.h \
     benevole.h \
+    excelexport.h \
     mainwindow.h
 
 FORMS += \
